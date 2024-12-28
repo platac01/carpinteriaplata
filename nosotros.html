@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com//boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./style(css)/nosotros.css">
+    <title>Carpintería Plata</title>
+</head>
+<body>
+
+    <!--Esto viene siendo la barra de navegacion de la pagina-->
+    <header>
+        <div class="navbar-inicio">
+                        <!--Logo-->
+                <footer class="footer-logo">
+                    <div class="footer-left-logo">
+                        <a href="./index.html" class="logo-a">
+                            <h3>Carpintería<span>Plata</span></h3>
+                        </a>
+                    </div>
+                </footer>
+
+            <ul class="links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+
+    <!--Fin navbar-->
+
+    <!--Presentacion-->
+    <section id="home" class="inicio">
+        <div class="Inicio-content">
+            <h1>Sobre Nosotros</h1>
+        </div>
+    </section>
+    <!--Fin presentacion-->
+
+    <!--introduccion-->
+
+    <style>
+        .text-container {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    height: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #8d4925;
+}
+
+.text-fade {
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.text-fade.visible {
+    opacity: 1;
+}
+    </style>
+
+    <div class="text-container">
+
+        <div class="text-fade visible" id="text1">
+            Quienes Somos
+        </div>
+
+        <div class="text-fade" id="text2">
+            Qué Hacemos
+        </div>
+
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const texts = [
+        document.getElementById("text1"),
+        document.getElementById("text2")
+    ];
+
+    let currenIndex = 0;
+
+    function changeText() {
+        texts[currenIndex].classList.remove("visible");
+
+        currenIndex = (currenIndex + 1) % texts.length;
+
+        texts[currenIndex].classList.add("visible");
+    }
+    setInterval(changeText, 4000);
+});
+    </script>
+
+    <section class="introduccion">
+        <p>En Carpintería Plata, contamos con 10 años de experiencia en el apasionante mundo de la carpintería, perfeccionando cada técnica para ofrecer a nuestros clientes productos que combinen calidad, diseño y funcionalidad. Nos encontramos en Nicaragua, y desde nuestros inicios, hemos trabajado arduamente para construir una reputacion basada en la dedicación, el compromiso, y el amor por el arte de la madera.<br><br>Proveemos servicios de carpintería a medida, adaptándonos a las necesidades de cada cliente. Desde muebles úicos para el hogar, como mesas, estanterías, y camas, hasta proyectos de diseño para oficinas, tiendas y restaurantes. Cada pieza es creada con esmero, buscando que cada detalle refleje el estilo y personalidad de quienes confían en nosotros.</p>
+    </section>
+
+    <!--Fin introduccion-->
+
+    <!--Seccion porque elegirnos-->
+    <section class="elegirnos" id="elegirnos">
+
+        <div class="elegirnos-container">
+
+            <div class="elgirnosp">
+                Por Qué Elegirnos
+            </div>
+
+            <div class="elegirnos-box">
+                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANNJREFUSEvtlYENgyAQRXWDbqIbtG7gJq6gEzlCO0K7iRvo/eSOCIJ4Edo00YSIwv33/0liWWS+ysz6xdcBMydKBnaFLsDmzPxdi24UoaMxSJSUCSD+pFEzoAdECxAR1DY0Jna6Fv/Qu4esaQBrEei+GYK5OLfENQlch6itGII52rIRPwrwxUftiyGYe8WPAIK9pWKsAYLL9JyfzS32DVraOe45dAW1AOwHBE7lxMQ0rfVYApWYb/PPAGedG+NuAvT6flad6oOABNq2RLJfY8hZdsAC6WEzGZ6ly9YAAAAASUVORK5CYII="/></i>
+                <h3>Eficacia</h3>
+                <p>Nos enorgullece ser una de las carpinterías más eficientes del sector, ofreciendo un equilibrio excepcional entre calidad y precio en cada proyecto, ajustándonos a las necesidades específicas de nuestros clientes.</p>
+            </div>
+
+            <div class="elegirnos-box">
+                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR9JREFUSEu9lQ0RgkAQhSGBRqCBYwKJoAmkgZpATKARNIHaABtoAyJoAn3P4Rg57tfz3JkbBm53v7d7P6RJZEsj5098AAXErBtBJZ4HF3EuAJE4kxLWeLeCTABdYlm4EaQCuCZ2AsmAClETl94afK6YG4t5GfAMTN7L+3fAHRIGP6iiFR5jDS4QmOvWYIeJRWAFPIDciW+TK5ji2zEQMEP8SQfg95B1eCB++ClQddBKOIg7x7eYDQIY35oKQAU1hu9uovqs6YARwMklxtZT/gr+3CQdM112e3jOHSFn+HGD9MwEYKsqjJEFcsN8LrdGxNj+B4Rwy+kuQGNyQmwAIUR1ADsHSlelK4DxbANBrKpo2mddIh+ANZnvIn+VUA56AVErKxmECfu4AAAAAElFTkSuQmCC"/></i>
+                <h3>Durabilidad</h3>
+                <p>Diseñamos cada pieza para soportar el paso del tiempo, asegurando que nuestros productos de madera mantengan su resistencia, belleza y funcionalidad a lo largo de los años.</p>
+            </div>
+
+            <div class="elegirnos-box">
+                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAapJREFUSEu9leFRwzAMhdsN2IAwATABYQOYgG4ATABMAExAmYAyQcsEwAZhAzaA93FSTnYTO3+K7nSOY/m9J1lx5rMd23zH+LMpBAuJOJEfmaPpw3yl8bUkskRwpo338qaSZaf1azlkWzZG8KDIS4v+0sh8Y6p5TTat/Eq+b3HEQJTYEEEEZwPzkkFCptijkfbxOQFlebHV46C4wvGX0bsFnWvsy5UTdJbyFOU5qWcCxoEvRoKFXj7JqXlTk6z1PTnndBdiXWCfRSRYKvBCPkU94Gs5pYHg1kg8i2fNEZx8B/T2obxW+wj+qfhW/m0EfhZggZMQ/FhQzApldJEDlMC9UglOBMsJAL+Ro+bUdntZcuUOzjhKkJcItRsrG2sYJSiBe4mI4Tkp0VLz/JAjCfElcNaLh+wfWafAvo/17CQAtHI/j1gWf2YvV8dgmxLkAXmrQoKVwF198h39+1WBStrSb1JUcYGVzJUTU73sHCiSUDbmb/LYTfyEAG9s0xY472s/HID9vh/LgppDtBoKmPLLpLtw+pqrBKNdyQbQQWAnm0JQPIDa4s4JfgFyjWgZqEoNoQAAAABJRU5ErkJggg=="/></i>
+                <h3>Confianza</h3>
+                <p>Como carpintería familiar, valoramos las relaciones a largo plazo con nuestros clientes, brindándoles productos en los que pueden confiar y asegurándonos de su satisfacción en cada pedido.</p>
+            </div>
+
+        </div>
+    </section>
+    <!--Fin Seccion porque elegirnos-->
+
+    <!--Pie de pagina-->
+
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3 >Carpintería<span>Plata</span></h3>
+
+        <p class="footer-links">
+
+            <a href="./index.html">Inicio</a></li>
+            |
+            <a href="./servicios.html">Servicios</a>
+            |
+            <a href="./galeria.html">Galeria</a>
+            |
+            <a href="#">Nosotros</a>
+            |
+            <a href="./contacto.html">Contacto</a>
+
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>CarpinteríaPlata</strong> Todos los derechos reservados.</p>
+
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nicaragua</span>Enabas Central 4C Abajo</p>
+        </div>
+
+        <i class="fa fa-envelope"></i>
+            <p><a href="./contacto.html">carpinteriaplata@gmail.com</a></p>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Sobre la Carpintería</span>
+            <strong>Carpintería Plata</strong> Diseñamos y fabricamos piezas únicas de madera con dedicación y calidad, adaptándonos siempre a tus necesidades.
+        </p>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/profile.php?id=61568492882850&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/carpinteria_plata" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </div>
+
+   </footer>
+
+</body>
+</html>

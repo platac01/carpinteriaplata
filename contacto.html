@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style(css)/contacto.css">
+    <title>Carpintería Plata</title>
+</head>
+<body>
+
+    <!--Esto viene siendo la barra de navegacion de la pagina-->
+    <header>
+        <div class="navbar-inicio">
+                        <!--Logo-->
+                <footer class="footer-logo">
+                    <div class="footer-left-logo">
+                        <a href="./index.html" class="logo-a">
+                            <h3>Carpintería<span>Plata</span></h3>
+                        </a>
+                    </div>
+                </footer>
+
+            <ul class="links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+
+    <!--Fin navbar-->
+
+    <!--Inicio pagina contactos-->
+
+    <section>
+        <div class="container">
+            <div class="box-info">
+                <h1>Contactate con nosotros</h1>
+                <div class="data">
+                    <p><i class="fa-solid fa-envelope"></i>carpinteriaplata1@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Enabas Central 4C Abajo</p>
+                </div>
+                
+                <div class="links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/carpinteriaplata1@gmail.com" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" required placeholder="Nombre y Apellido">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+    
+                <div class="input-box">
+                    <input type="email" name="email" required placeholder="Correo electronico">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+    
+                <div class="input-box">
+                    <textarea cols="30" rows="10" name="subject" placeholder="Escribe tu mensaje"></textarea>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <!--Fin pagina contactos-->
+
+    <!--Pie de pagina-->
+
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Carpintería<span>Plata</span></h3>
+
+        <p class="footer-links">
+
+            <a href="./index.html">Inicio</a></li>
+            |
+            <a href="./servicios.html">Servicios</a>
+            |
+            <a href="./galeria.html">Galeria</a>
+            |
+            <a href="./nosotros.html">Nosotros</a>
+            |
+            <a href="#">Contacto</a>
+
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>CarpinteríaPlata</strong> Todos los derechos reservados.</p>
+
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nicaragua</span>Enabas Central 4C Abajo</p>
+        </div>
+
+        <i class="fa fa-envelope"></i>
+            <p><a href="./contacto.html">carpinteriaplata1@gmail.com</a></p>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Sobre la Carpintería</span>
+            <strong>Carpintería Plata</strong> Diseñamos y fabricamos piezas únicas de madera con dedicación y calidad, adaptándonos siempre a tus necesidades.
+        </p>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/profile.php?id=61568492882850&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/carpinteria_plata" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </div>
+
+   </footer>
+
+</body>
+</html>
